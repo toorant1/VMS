@@ -1,0 +1,9 @@
+ <?php
+
+ for ($i = 0; $i < $rowcount; $i++)
+ {
+     $raw = mysqli_fetch_array($QUERY);
+ 
+ ?>
+     <option value =<?php echo $raw["name"] ?>><?php echo $raw["name"] ?></option>
+     
